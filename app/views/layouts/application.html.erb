@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>RamenReview</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+    <%= javascript_importmap_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application' %> 
+    <script src="https://kit.fontawesome.com/49556d7b42.js" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <% if flash[:notice] %>
+      <div class="notification is-info">
+        <p class="notice"><%= notice %></p>
+      </div>
+      <% if flash[:alert] %>
+        <div class="notification-is-danger">
+          <p class="alert"><%= alert %></p>
+        </div>
+      <% end %>
+    <% end %>
+    <%= yield %>
+  </body>
+</html>
