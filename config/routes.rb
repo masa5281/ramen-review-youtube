@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  get 'ramen_shops/index'
+  get 'ramen_shops/show'
   devise_for :users
   root 'homes#top'
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
