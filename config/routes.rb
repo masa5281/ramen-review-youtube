@@ -1,8 +1,10 @@
 Rails.application.routes.draw do
-  get 'ramen_shops/index'
-  get 'ramen_shops/show'
+  # get 'reviews/index'
   devise_for :users
   root 'homes#top'
+  resources :ramen_shops, only: [:index, :show] do
+    resources :reviews, only: [:index, :create]
+  end
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
   # Reveal health status on /up that returns 200 if the app boots with no exceptions, otherwise 500.
