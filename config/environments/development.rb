@@ -73,4 +73,7 @@ Rails.application.configure do
 
   # Raise error when a before_action's only/except options reference missing actions
   config.action_controller.raise_on_missing_callback_actions = true
+
+  config.assets.debug = true # デバッグモードを有効にし、アセットの詳細な情報を表示
+  config.assets.compile = true # 開発環境でアセットを動的にコンパイル
 end

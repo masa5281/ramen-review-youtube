@@ -70,3 +70,5 @@ gem "dartsass-rails", "~> 0.5.1"
 
 gem 'bulma-rails'
 gem 'devise'
+
+gem 'stringio', '3.1.2'

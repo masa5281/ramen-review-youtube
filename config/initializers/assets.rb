@@ -13,3 +13,5 @@ Rails.application.config.assets.version = "1.0"
 # アセットパイプラインにおいて事前にコンパイルするファイルを指定する。
 # admin.js と admin.css ではなく、reviews.js のみを事前コンパイルの対象にしている。
 Rails.application.config.assets.precompile += %w( reviews.js )
+Rails.application.config.assets.compile = true
+Rails.application.config.assets.quiet = true

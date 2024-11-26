@@ -1,0 +1,14 @@
+{
+  "name": "ramen_review",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:masa5281/ramen-review-youtube.git",
+  "author": "masa5281 <masa.h.5281@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "dart-sass": "^1.25.0"
+  },
+  "scripts": {
+  "build:css": "sass ./app/assets/stylesheets:./app/assets/builds --no-source-map --load-path=node_modules"
+}
+}

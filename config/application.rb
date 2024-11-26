@@ -23,5 +23,8 @@ module RamenReview
     #
     # config.time_zone = "Central Time (US & Canada)"
     # config.eager_load_paths << Rails.root.join("extras")
+
+    config.dartsass.build = true # SCSSファイルをCSSに自動変換する
+    config.dartsass.watch = true # ファイルの変更を常に監視し、リアルタイムでコンパイル
   end
 end
