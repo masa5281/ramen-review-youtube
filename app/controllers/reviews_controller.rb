@@ -1,4 +1,5 @@
 class ReviewsController < ApplicationController
+  before_action :authenticate_user!, only: [:create]
   def index
     @ramen_shop = RamenShop.find(params[:ramen_shop_id]) # 1つ分のラーメン店
     @reviews = @ramen_shop.reviews # @ramen_shopに紐づいているreviewを全て取得

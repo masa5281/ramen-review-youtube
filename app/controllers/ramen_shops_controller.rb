@@ -1,4 +1,5 @@
 class RamenShopsController < ApplicationController
+  before_action :authenticate_user!, only: [:show] # ログインしていない時にログインページにリダイレクトされるdeviseのヘルパーメソッド
   def index
     # ramen_shopテーブルの全てのレコードを取得
     @ramen_shops = RamenShop.all
