@@ -14,7 +14,7 @@
  *= require_self
  */
 
-@use "bulma";
+@use "bulma"; // gem 'bulma-rails'を導入するための記述
 @use "reviews";
 @use "ramen_shops";
 

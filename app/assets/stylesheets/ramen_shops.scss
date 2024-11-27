@@ -1,6 +1,6 @@
 .star-rating {
   position: relative;
-  width: 5em;
+  width: 5em; // 星の表示エリアの幅：font-sizeの25px x 5
   height: 1em;
   font-size: 25px;
 }
@@ -9,7 +9,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  overflow: hidden;
+  overflow: hidden; // 星の超過分を隠す
   color: #fc3;
 }
 

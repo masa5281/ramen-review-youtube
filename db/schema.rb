@@ -24,6 +24,7 @@ ActiveRecord::Schema[7.1].define(version: 2024_11_25_024929) do
     t.integer "score"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    # インデックスを定義している → ramen_shop_idやuser_idに基づいた検索がされる時に検索速度を向上させるための構造
     t.index ["ramen_shop_id"], name: "index_reviews_on_ramen_shop_id"
     t.index ["user_id"], name: "index_reviews_on_user_id"
   end

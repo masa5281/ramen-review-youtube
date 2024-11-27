@@ -14,6 +14,7 @@
               <div class="content">
                 <div class="average-score">
                   <div class="star-rating mb-2">
+                    <%# widthをscoreのパーセンテージ分の長さに可変させ、cssのoverflow: hidden;で元々のはみ出た黄色い星を隠す（可変で再設定された長さを超えた分） %>
                     <div class="star-rating-front" style="width: <%= ramen_shop.review_score_percentage %>%">★★★★★</div>
                     <div class="star-rating-back">★★★★★</div>
                   </div>

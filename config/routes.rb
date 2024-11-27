@@ -2,6 +2,8 @@ Rails.application.routes.draw do
   # get 'reviews/index'
   devise_for :users
   root 'homes#top'
+  # 特定のラーメン店に対するレビューという親子関係
+  # reviewsにアクセスする際に親であるramen_shopのID（ramen_shop_id）が自動的にパラメータに含まれる。
   resources :ramen_shops, only: [:index, :show] do
     resources :reviews, only: [:index, :create]
   end

@@ -15,6 +15,7 @@
   </head>
 
   <body>
+    <%# noticeとalertにメッセージがある場合は表示させる %>
     <% if flash[:notice] %>
       <div class="notification is-info">
         <p class="notice"><%= notice %></p>
@@ -46,7 +47,7 @@
         </div>
         <div class="navbar-end">
           <div class="navbar-item">
-            <%# devise認証でユーザーがログイン中かチェック %>
+            <%# devise認証でユーザーがログイン中かチェック 「user」のところはモデルに対応している → rails g model Menber だったら「menber」 %>
             <% if user_signed_in? %>
               <p class="navbar-item">ようこそ <%= current_user.username %> さん</p>
             <% end %>
